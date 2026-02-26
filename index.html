@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Poll</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .poll-box {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .strawpoll-embed {
+            height: 480px;
+            max-width: 640px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        iframe {
+            position: static;
+            visibility: visible;
+            display: block;
+            width: 100%;
+            flex-grow: 1;
+            border: none;
+            border-radius: 10px;
+        }
+        
+        .instructions {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .poll-box {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗳️ Class Poll</h1>
+            <p class="subtitle">Cast your vote below</p>
+        </header>
+        
+        <div class="poll-box">
+            <div class="strawpoll-embed" id="strawpoll_7rnzVrrdLnO">
+                <iframe 
+                    title="StrawPoll Embed" 
+                    id="strawpoll_iframe_7rnzVrrdLnO" 
+                    src="https://strawpoll.com/embed/7rnzVrrdLnO" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    allowtransparency>
+                    Loading...
+                </iframe>
+            </div>
+            <script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script>
+            
+            <p class="instructions">
+                💡 Refresh the page to see updated results
+            </p>
+        </div>
+        
+        <footer>
+            <p>Created for classroom discussion</p>
+        </footer>
+    </div>
+</body>
+</html>
